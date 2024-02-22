@@ -1,0 +1,35 @@
+R = int(input(''))
+C = int(input(''))
+total = 0
+column = []
+
+for row in range(R):
+  row = input('')
+  column.append(row)
+
+A = int(input(''))
+B = int(input(''))
+
+rownum = row[A]
+columnnum = rownum[B]
+
+blocked = False
+while blocked is False:
+
+# if A > 0:
+#   left = row[A-1]
+# if A < len
+# right = row[A+1]
+# up = column[B-1]
+# down = column[B+1]
+
+  # for each in range(len(pumpkin)):
+  #   if ord(pumpkin[each]) == ord('*'):
+  #     total = total +0
+  #   elif ord(pumpkin[each]) == ord('S'):
+  #     total = total +1
+  #   elif ord(pumpkin[each]) == ord('M'):
+  #     total = total +5
+  #   else:
+  #     total = total +10
+print(total)
