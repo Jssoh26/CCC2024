@@ -1,0 +1,51 @@
+#Problem J3
+N = int(input(''))
+FParticipantscore = []
+SParticipantscore = []
+TParticipantscore = []
+gold = 0
+silver = 0
+bronze = 0
+
+for number in range(N):
+  people = int(input(''))
+  FParticipantscore.append(people)
+
+gold == FParticipantscore[0]
+for score in FParticipantscore:
+  if score > gold:
+    gold = score
+  else:
+    pass
+# print(gold)
+# print(FParticipantscore)
+for score in FParticipantscore:
+  if score != gold:
+    SParticipantscore.append(score)
+silver == SParticipantscore[0]
+for score in SParticipantscore:
+  if score > silver:
+    silver = score
+  else:
+    pass
+# print(silver)
+# print(SParticipantscore)
+for score in SParticipantscore:
+  if score != silver:
+    TParticipantscore.append(score)
+# print(TParticipantscore)
+bronze == TParticipantscore[0]
+for score in TParticipantscore:
+  if score > bronze:
+      bronze = score
+  else:
+    pass
+# print(TParticipantscore)
+# print(bronze)
+
+num = 0
+for score in TParticipantscore:
+  if score == bronze:
+    num = num + 1
+
+print(bronze , "  " , num)
