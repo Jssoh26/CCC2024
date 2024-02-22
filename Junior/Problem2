@@ -1,0 +1,11 @@
+R = int(input(''))
+Yobi = []
+for number in range(6):
+  Y = int(input(''))
+  Yobi.append(Y)
+for num in Yobi:
+  if R > num:
+    R = R + num
+  else:
+    break
+print(R)
