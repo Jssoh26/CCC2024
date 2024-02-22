@@ -1,0 +1,40 @@
+N = input('')
+
+display = input('')
+start = 0
+skippedtimes = 0
+inputsillykey = ''
+outputsillykey = ''
+if len(N) == len(display): # without quiet key
+  for position in range(len(display)):
+    if ord(display[position]) == ord(N[position]):
+      pass
+    else:
+      inputsillykey = N[position]
+      outputsillykey = display[position]
+  print(inputsillykey, ' ', outputsillykey)
+  print('-')
+else:
+  for position in range(len(N)):
+    for parts in range(len(display)):
+
+      if ord(N[position]) != ord(display[parts]):
+        quiet = (N[position])
+      else:
+        skippedtimes = skippedtimes +1
+        inputsillykey = N[skippedtimes]
+        outputsillykey = display[skippedtimes]
+
+  print(inputsillykey, ' ', outputsillykey)
+  print(quiet)
+
+# else: # with a quiet key
+#   for position in range(len(display)):
+#     start == position
+#     if ord(display[position]) == ord(N[start]):
+#       pass
+#     else:
+#       for repeats in range(len(display[position:]))
+#         start = position + repeats
+#         if po
+
